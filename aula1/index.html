@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de HTML T23</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+        h2.section-title.dsa.few.rew.ryere.tretre.tretret.trete {
+            color: red;
+        }
+        .section-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: silver;
+            padding: 15px;
+        }
+
+        section {
+            height: 500px;
+            background-color: white;
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        #comprar-luminaria {
+            width: 200px;
+        }
+
+        img {
+            object-fit: cover;
+            transition: all .5s ease; 
+            /* SAIDA do mouse */
+        }
+
+        img:hover {
+            height: 900px;
+            transition: all 5.5s ease;
+            /* entrada do mouse */
+
+        }
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding: 5px;
+        }
+        
+    </style>
+
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <h1>Loja do Marco</h1>
+
+    <p>Bem-vindo a minha loja, vendemos os melhores produtos aqui.</p>
+
+    <img src="images/imagem1.jpg" 
+        alt="Imagem de loja de ferramentas" 
+        title="Imagem de loja de ferramenta"
+        width="900"
+        height="300"
+        />
+
+    <div class="section-container">
+        <section>
+            <h2 class="section-title grande com-sublinhado" id="titulo-1">Luminárias</h2>
+            <p>A maior diversidade de produtos de iluminação</p>
+            <table border="1" >
+                <thead>
+                    <tr>
+                        <th>Cód</th>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                    </tr>
+                    <tr>
+                        <td>f142</td>
+                        <td>Plafon</td>
+                        <td>R$42,98</td>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>f112</td>
+                    <td>Resistor</td>
+                    <td>R$1,09</td>
+                </tr>
+                <tr>
+                    <td>f149</td>
+                    <td>Lâmpada</td>
+                    <td>R$9,18</td>
+                </tr>
+            </table>
+            
+            <!-- <button id="comprar-luminaria">Comprar</button> -->
+            <a href="produtos.html" id="comprar-luminaria">Comprar</a>
+        </section>
+
+        <section>
+            <h2 class="section-title">Elétrica</h2>
+            <p>A maior diversidade de produtos de iluminação</p>
+            <ol id="lista-ol">
+                <li title="Fios de cobre e aço">Fios</li>
+                <li>Tomadas</li>
+                <li>Fusíveis</li>
+            </ol>
+            <a href="produtos.html" target="_blank" id="comprar-eletrica" >Comprar</a>
+
+        </section>
+    </div>
+
+</body>
+</html>

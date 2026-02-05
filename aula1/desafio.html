@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: white;
+            padding: 50px;
+
+        }
+        div {
+            min-height: 100px;
+        }
+        .container {
+            width: 90%;
+        }
+
+        .linha {
+            display: flex;
+            flex-direction: row;
+        }
+        .amarelo {
+            flex: 0 1 50%;
+            background: yellow;
+            padding: 30px;
+
+        }
+        .verde {
+            flex: 0 1 50%;
+            background: green;
+            padding: 30px;
+        }
+        .azul {
+            background: blue;
+            max-width: 60%;
+            margin:0 auto;
+        }
+        .roxo {
+            flex: 1;
+            background: purple;
+            padding: 30px;
+
+        }
+        .linha2 .amarelo {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="linha">
+            <div class="verde">
+                <div class="azul"></div>
+            </div>
+            <div class="amarelo">
+                <div class="azul"></div>
+            </div>
+        </div>
+        <div class="linha linha2">
+            <div class="roxo"></div>
+            <div class="amarelo"></div>
+            <div class="roxo"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
