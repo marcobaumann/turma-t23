@@ -4,8 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .lista-produtos {
+            display: flex;
+            gap: 10px;
+            padding: 30px 50px;
+            justify-content: space-around;
+            background-color: grey;
+        }
+
+        .produto {
+            
+            border-radius: 10px;
+            background-color: white;
+            border: solid 1px #aaa;
+            flex: 0 25%;
+        }
+
+        .produto img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .produto .conteudo {
+            padding: 10px 20px 20px 20px;
+        }
+        .produto a {
+
+            background-color: darkblue;
+            color: white;
+            text-transform: uppercase;
+            padding: 10px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+    <link rel="stylesheet" href="produto.css">
 </head>
 <body>
+    <header>
+        <img class="logo" src="images/logo-teste.png" alt="Logo da minha loja">
+        <div>
+            <label for="menu-open">MENU</label>
+            <input type="checkbox" name="" id="menu-open">
+            <div></div>
+            <ul class="menu">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </div>
+        
+    </header>
+    <h1>Produtos</h1>
+
+    <div class="lista-produtos">
+        <div class="produto">
+            <img src="https://picsum.photos/500/250" alt="">
+            <div class="conteudo">
+
+                <h3>Nome Produto</h3>
+                <p>descrição xyz</p>
+                <a href="http://">Comprar</a>
+            </div>
+        </div>
+        <div class="produto">
+            <img src="https://picsum.photos/500/250?random=1" alt="">
+            <div class="conteudo">
+
+                <h3>Nome Produto</h3>
+                <p>descrição xyz</p>
+                <a href="http://">Comprar</a>
+            </div>
+        </div>
+        <div class="produto">
+            <img src="https://picsum.photos/500/250?random=2" alt="">
+            <div class="conteudo">
+
+                <h3>Nome Produto</h3>
+                <p>descrição xyz</p>
+                <a href="http://">Comprar</a>
+            </div>
+        </div>
+    </div>
     <form method="post" action="index.html">
         <input name="meu_campo_legal" type="text" value="">
         <button type="submit">Voltar</button>

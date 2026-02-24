@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header img {
+    height: 30px;
+    width: auto;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .menu {
+    opacity: 1;
+    pointer-events: all;
+}
+
+header .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    background-color: black;
+    list-style: none;
+    padding-left: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
