@@ -1,0 +1,104 @@
+header {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* padding: 10px 20px; */
+    /* background-color: #f5f5f5; */
+}
+
+header .logo {
+    width: 60px;
+    height: auto;
+}
+
+header .menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    cursor: pointer;
+    padding: 0;
+
+}
+
+header .menu > li{
+    position: relative;
+    padding: 5px;
+}
+
+header .menu > li:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: -50%;
+    width: 100%;
+    height: 20px;
+    background-color: transparent;
+    transition: all 0.3s ease;
+    /* background-color: orange; */
+}
+
+header .menu > li:hover {
+    background-color: #ddd;
+}
+
+header .menu > li:hover .submenu {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+header .submenu {
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 0;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.3s ease;
+    background-color: white;
+    width: 100px;
+}
+
+header .submenu > li {
+    position: relative;
+    padding: 5px 10px;
+}
+
+header .submenu > li:before {
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 100%;
+    width: 30px;
+    height: 60px;
+    /* background-color: transparent; */
+    /* transition: all 0.3s ease; */
+    /* background-color: orange; */
+}
+
+.subsubmenu {
+    border: 1px solid #ccc;
+    list-style: none;
+    padding: 5px;
+    width: 150px;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 11;
+    transition: all 0.3s ease;
+    background-color: silver;
+}
+
+
+
+header .submenu > li:hover {
+    background-color: grey;
+}
+
+header .submenu > li:hover .subsubmenu {
+    opacity: 1;
+    pointer-events: auto;
+}
